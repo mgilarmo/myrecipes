@@ -1,0 +1,39 @@
+.recipe-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.recipe-name a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.recipe-name a:hover {
+  text-decoration: underline;
+}
+
+.cook-time, .hardware {
+  margin-top: 5px;
+}
+
+.oven-temp {
+  margin-top: 20px;
+}
+
+.hardware-list ul, .ingredients-list ul, .directions-list ol, .notes-list ul {
+  padding-left: 20px;
+}
+
+.hardware-list ul li, .ingredients-list ul li, .notes-list ul li {
+  margin: 5px 0;
+}
+
+.ingredients, .directions, .notes {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.directions-list ol li {
+  margin: 10px 0;
+}

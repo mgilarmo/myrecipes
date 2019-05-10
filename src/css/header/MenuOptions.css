@@ -1,0 +1,75 @@
+@media(min-width: 751px) {
+  ul.menu-options {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  ul.menu-options label {
+    cursor: pointer;
+  }
+
+  ul.menu-options li {
+    display: inline;
+    padding-left: 20px;
+  }
+
+  ul.menu-options li label i {
+    display: inline-block;
+    width: 20px;
+  }
+
+  ul.menu-options li label div {
+    display: inline-block;
+  }
+
+  ul.menu-options li:nth-child(1) label div {
+    width: 70px;
+  }
+
+  ul.menu-options li:nth-child(2) label div {
+    width: 70px;
+  }
+
+  ul.menu-options li:nth-child(3) label div {
+    width: 50px;
+  }
+
+  ul.menu-options li:nth-child(2), ul.menu-options li:nth-child(3) {
+    padding-left: 20px;
+  }
+}
+
+@media(max-width: 750px) {
+  #addRecipe i, #showAllRecipes i, #inspireMe i {
+    display: none;
+  }
+
+  ul.menu-options {
+    margin-top: 10px;
+    padding-left: 20px;
+    background-color: rgb(255, 245, 211);
+    border-radius: 10px;
+  }
+
+  ul.menu-options li {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  ul.menu-options label {
+    cursor: pointer;
+  }
+  
+  ul.menu-options li label div {
+    display: block;
+  }
+  
+  ul.menu-options li:nth-child(1) label div, ul li:nth-child(2) label div, ul li:nth-child(3) label div {
+    width: 100%;
+  }
+
+  ul.menu-options li:nth-child(2), ul li:nth-child(3) {
+    padding-left: 0;
+  }
+}

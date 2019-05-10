@@ -11,6 +11,7 @@ const INITIAL_STATE = {
   selectedRecipeId: '',
   selectedRecipeName: '',
   showAllRecipes: false,
+  showModal: false,
   term: '',
   videos: []
 };

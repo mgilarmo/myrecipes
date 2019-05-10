@@ -31,9 +31,7 @@ export const searchingRecipes = (term) => {
 };
 
 export const toggleBoolean = (stateToToggle) => (dispatch, getState) => {
-  console.log(dispatch);
-  console.log(getState);
-  const newState = getState().stateToToggle ? false : true 
+  const newState = getState().stateToToggle ? false : true;
   dispatch({
     type: TOGGLE_BOOLEAN, 
     payload: {
@@ -52,6 +50,12 @@ export const selectRecipeCard = (id, name) => {
 };
 
 export const fetchYouTubeVideos = (selectedRecipeName) => async (dispatch) => {
-  const response = await youtube.get('/search', {params: {q: selectedRecipeName}});
+  const response = await youtube.get(
+    '/search', {
+      params: {
+        q: selectedRecipeName
+      }
+    }
+  );
   dispatch({type: FETCH_VIDEOS, payload: response});
 };

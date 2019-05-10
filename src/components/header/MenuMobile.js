@@ -22,7 +22,7 @@ class MenuMobile extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleBoolean: dispatch(toggleBoolean)
+    toggleBoolean: stateToToggle => dispatch(toggleBoolean(stateToToggle))
   }
 }
 

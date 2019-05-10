@@ -61,7 +61,6 @@ class GoogleAuth extends React.Component {
     }
   }
 
-
   render() {
     return (
       <div>
@@ -74,17 +73,17 @@ class GoogleAuth extends React.Component {
 const mapStateToProps = (state) => {
   return {
     isSignedIn: state.auth.isSignedIn
-  }
+  };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    signIn: dispatch(signIn),
-    signOut: dispatch(signOut)
-  }
-};
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     signIn: dispatch(signIn),
+//     signOut: dispatch(signOut)
+//   };
+// };
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  {signIn, signOut}
 )(GoogleAuth);

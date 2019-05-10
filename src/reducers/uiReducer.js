@@ -20,7 +20,7 @@ export default (state = INITIAL_STATE, action) => {
     case TOGGLE_BOOLEAN:
       return {
         ...state,
-        [action.payload]: !state.action.payload ? true : false
+        [action.payload.state]: action.payload.stateChange
       };
     case SEARCHING_RECIPES:
       return {

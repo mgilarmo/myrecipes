@@ -34,7 +34,13 @@ export const toggleBoolean = (stateToToggle) => (dispatch, getState) => {
   console.log(dispatch);
   console.log(getState);
   const newState = getState().stateToToggle ? false : true 
-  dispatch({type: TOGGLE_BOOLEAN, payload: newState})
+  dispatch({
+    type: TOGGLE_BOOLEAN, 
+    payload: {
+      state: [stateToToggle], 
+      stateChange: newState
+    }
+  })
 };
 
 

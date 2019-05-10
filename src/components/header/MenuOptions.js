@@ -16,9 +16,7 @@ const MenuOptions = (props) => {
       <li>
         <label 
           id="showAllRecipes"
-          onClick={() => {
-            props.showAllRecipes(props.allRecipes)
-          }}
+          onClick={props.toggleBoolean('showAllRecipes')}
         >
           <i className="fas fa-book-open" />
           <div>Show all Recipes</div>
@@ -36,17 +34,17 @@ const MenuOptions = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    allRecipes: state.ui.showAllRecipes
+    showAllRecipes: state.ui.showAllRecipes
   }
 };
 
-const mapDispatchToState = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    toggleBoolean: dispatch(toggleBoolean)
+    toggleBoolean: stateToToggle => dispatch(toggleBoolean(stateToToggle))
   }
 }
 
 export default connect(
   mapStateToProps,
-  mapDispatchToState
+  mapDispatchToProps
 )(MenuOptions);

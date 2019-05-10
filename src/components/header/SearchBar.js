@@ -24,13 +24,13 @@ const mapStateToProps = (state) => {
   }
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    searchingRecipes: dispatch(searchingRecipes())
-  }
-}
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     searchingRecipes: dispatch(searchingRecipes())
+//   };
+// };
 
 export default connect(
   mapStateToProps, 
-  mapDispatchToProps
+  {searchingRecipes}
 )(SearchBar);

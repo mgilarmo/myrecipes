@@ -41,6 +41,10 @@ export const toggleBoolean = (stateToToggle) => (dispatch, getState) => {
   })
 };
 
+export const showRecipeAndVideos = (id, name) => async (dispatch) => {
+  dispatch(selectRecipeCard(id, name));
+  await dispatch(fetchYouTubeVideos(name));
+};
 
 export const selectRecipeCard = (id, name) => {
   return {
@@ -49,13 +53,14 @@ export const selectRecipeCard = (id, name) => {
   };
 };
 
-export const fetchYouTubeVideos = (selectedRecipeName) => async (dispatch) => {
-  const response = await youtube.get(
+export const fetchYouTubeVideos = (name) => (dispatch) => {
+  const response = youtube.get(
     '/search', {
       params: {
-        q: selectedRecipeName
+        q: name
       }
     }
   );
-  dispatch({type: FETCH_VIDEOS, payload: response});
+  console.log(response)
+  // dispatch({type: FETCH_VIDEOS, payload: response});
 };

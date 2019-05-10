@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Recipes from './Recipes';
-import {selectRecipeCard} from '../../actions/actions';
+import {showRecipeAndVideos} from '../../actions/actions';
 import '../../css/main/SearchResults.css';
 
 
@@ -24,7 +24,7 @@ const SearchResults = (props) => {
           className="recipe-card"
           key = {recipe.id} 
           onClick = {() => {
-            props.selectRecipeCard(recipe.id, recipe.recipeName)
+            props.showRecipeAndVideos(recipe.id, recipe.recipeName)
           }} 
         >
           {recipe.recipeName}
@@ -41,13 +41,13 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    selectRecipeCard: dispatch(selectRecipeCard)
-  }
-};
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     showRecipeAndVideos: dispatch(showRecipeAndVideos)
+//   }
+// };
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  {showRecipeAndVideos}
 )(SearchResults);

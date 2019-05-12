@@ -1,8 +1,11 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
-
+import {Router, Route, Switch} from 'react-router-dom';
+import history from './history';
 import TopBar from './header/TopBar';
 import FindMyRecipes from './FindMyRecipes';
+import CreateRecipe from './FindMyRecipes';
+import EditRecipe from './FindMyRecipes';
+import DeleteRecipe from './FindMyRecipes';
 import InspireMe from './InspireMe';
 import Footer from './footer/Footer';
 import '../css/App.css';
@@ -10,18 +13,21 @@ import '../css/App.css';
 const App = () => {
   return (
     <div>
-      <div className="header">
-        <TopBar />
-      </div>
-      <div className="content-spacer"></div>
-      <div className="body-container">
-        <BrowserRouter>
-          <div>
+      <Router history={history}>
+        <div className="header">
+          <TopBar />
+        </div>
+        <div className="content-spacer"></div>
+        <div className="body-container">
+          <Switch>
             <Route path="/" exact component={FindMyRecipes} />
             <Route path="/inspireme" exact component={InspireMe} />
-          </div>
-        </BrowserRouter>
-      </div>
+            <Route path="/create" exact component={CreateRecipe} />
+            <Route path="/edit:id" exact component={EditRecipe} />
+            <Route path="/delete:id" exact component={DeleteRecipe} />
+          </Switch>
+        </div>
+      </Router>
       <div className="footer">
         <Footer />
       </div>

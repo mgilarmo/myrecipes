@@ -12,9 +12,9 @@ class Videos extends React.Component {
 
     return (
       <div>
-      {this.props.videos.map((video) => {
+      {this.props.videos.map((video, i) => {
         return (
-          <div className="video-item">
+          <div className="video-item" key={i}>
             <a target="_blank" rel="noopener noreferrer" href={`https://youtube.com/watch?v=${video.id.videoId}`}>
               <img 
                 src={video.snippet.thumbnails.medium.url} 

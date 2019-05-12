@@ -1,5 +1,6 @@
 import {
   FETCH_VIDEOS,
+  GENERIC,
   SEARCHING_RECIPES,
   SELECT_RECIPE_CARD,
   TOGGLE_BOOLEAN
@@ -18,6 +19,11 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case GENERIC:
+      return {
+        ...state,
+        ...action.payload,
+      }
     case TOGGLE_BOOLEAN:
       return {
         ...state,
@@ -25,14 +31,15 @@ export default (state = INITIAL_STATE, action) => {
       };
     case SEARCHING_RECIPES:
       return {
-        ...state,
-        term: action.payload
+        ...INITIAL_STATE,
+        term: action.payload,
       };
     case SELECT_RECIPE_CARD:
       return {
         ...state,
         selectedRecipeId: action.payload.id,
-        selectedRecipeName: action.payload.name
+        selectedRecipeName: action.payload.name,
+        mobileMenu: INITIAL_STATE.mobileMenu
       };
     case FETCH_VIDEOS:
       return {

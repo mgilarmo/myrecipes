@@ -9,10 +9,12 @@
 
 .recipe-selected {
   grid-area: recipe;
+  margin-bottom: 60px;
 }
 
 .recipe-videos {
   grid-area: videos;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 750px) {

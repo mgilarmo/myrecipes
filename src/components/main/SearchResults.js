@@ -6,14 +6,33 @@ import '../../css/main/SearchResults.css';
 
 
 const SearchResults = (props) => {
-  console.log(props.term);
-  console.log(props.showAllRecipes);
+  // sort an array of objects by key, https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/
+  const compareValues = (key, order='asc') => (a, b) => {
+    if(!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+      return 0;
+    }
+    
+    const varA = (typeof a[key] === 'string') ? a[key].toUpperCase() : a[key];
+    const varB = (typeof b[key] === 'string') ? b[key].toUpperCase() : b[key];
+
+    let comparison = 0;
+    if (varA > varB) {
+      comparison = 1;
+    } else if (varA < varB) {
+      comparison = -1;
+    }
+
+    return order === 'desc' ? (comparison * -1) : comparison;
+  };
+  
   let filteredRecipes = []
+  let sortedRecipes = [...Recipes].sort(compareValues('recipeName'))
+
   if(props.showAllRecipes) {
-    filteredRecipes = Recipes;
+    filteredRecipes = sortedRecipes;
   } else {
-    filteredRecipes = props.term !== undefined && props.term.length > 0 ? 
-      Recipes.filter((recipe) => 
+    filteredRecipes = props.term.length > 0 ? 
+    sortedRecipes.filter((recipe) => 
         JSON.stringify(recipe).toLowerCase().indexOf(props.term.toLowerCase()) > -1) :
     [];    
   }

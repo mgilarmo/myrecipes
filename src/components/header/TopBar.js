@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import SearchBar from './SearchBar';
 import GoogleAuth from './GoogleAuth';
 import Menu from './Menu';
@@ -7,14 +8,19 @@ import MenuOptions from './MenuOptions';
 import '../../css/header/TopBar.css';
 
 const TopBar = (props) => {
+
   return (
     <div className="header-container">
       <div className="topbar-grid">
         <div className="topbar-item-image">
-          <img alt="Basil Leaf" src="/images/BasilLeaf.jpg"/>
+          <Link to="/">
+            <img alt="Basil Leaf" src="/images/BasilLeaf.jpg"/>
+          </Link>
         </div>
         <div className="topbar-item-site">
-          My Recipes
+          <Link to="/">
+            My Recipes
+          </Link>
         </div>
         <div className="topbar-item-search">
           <SearchBar 
@@ -28,7 +34,7 @@ const TopBar = (props) => {
           <GoogleAuth />
         </div>
       </div>
-      <div className={`menu-mobile ${props.mobileMenu}`}>
+      <div className={`menu-mobile ${props.mobileMenu ? 'open' : 'closed'}`}>
         <MenuOptions />
       </div>
     </div>

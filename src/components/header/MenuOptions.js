@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import {toggleBoolean} from '../../actions/actions';
 import '../../css/header/MenuOptions.css';
 
@@ -8,24 +9,30 @@ const MenuOptions = (props) => {
   return (
     <ul className="menu-options">
       <li>
-        <label id="addRecipe" >
-          <i className="fas fa-plus" />
-          <div>Add a Recipe</div>
+        <label id="addRecipe">
+          <Link to={'/create'}>
+            <i className="fas fa-plus" />
+            <div>Add a Recipe</div>
+          </Link>
         </label>
       </li>
       <li>
         <label 
           id="showAllRecipes"
-          onClick={props.toggleBoolean('showAllRecipes')}
+          onClick={() => props.toggleBoolean('showAllRecipes')}
         >
-          <i className="fas fa-book-open" />
-          <div>Show all Recipes</div>
+          <Link to='/'>
+            <i className="fas fa-book-open" />
+            <div>Show all Recipes</div>
+          </Link>
         </label>
       </li>
       <li>
         <label id="inspireMe">
-          <i className="far fa-lightbulb" />
-          <div>Inspire Me</div>
+          <Link to='/inspireme'>
+            <i className="far fa-lightbulb" />
+            <div>Inspire Me</div>
+          </Link>
         </label>
       </li>
     </ul>

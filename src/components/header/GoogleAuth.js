@@ -76,14 +76,14 @@ const mapStateToProps = (state) => {
   };
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     signIn: dispatch(signIn),
-//     signOut: dispatch(signOut)
-//   };
-// };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    signIn: () => dispatch(signIn()),
+    signOut: () => dispatch(signOut())
+  };
+};
 
 export default connect(
   mapStateToProps,
-  {signIn, signOut}
+  mapDispatchToProps
 )(GoogleAuth);

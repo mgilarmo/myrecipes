@@ -57,7 +57,7 @@ const RecipeSelected = (props) => {
       </div>
       <div className="notes-list">
         <ul>
-          {/* {findRecipe.notes.map((item, i) => <li key={i}>{item}</li>)} */}
+          {findRecipe.notes.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       </div>
     </div>

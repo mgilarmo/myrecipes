@@ -9,9 +9,9 @@ const SearchBar = (props) => {
     <div className="recipe-search">
       <input 
         type="text" 
-        placeholder={props.placeholder}
+        placeholder = {props.placeholder}
         value={props.term}
-        onChange={event => searchingRecipes(event.target.value)}
+        onChange={event => props.searchingRecipes(event.target.value)}
         autoFocus
       />
     </div>

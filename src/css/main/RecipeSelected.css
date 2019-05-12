@@ -4,11 +4,6 @@
   margin-bottom: 10px;
 }
 
-.recipe-name a {
-  color: #333333;
-  text-decoration: none;
-}
-
 .recipe-name a:hover {
   text-decoration: underline;
 }

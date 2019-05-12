@@ -13,7 +13,7 @@
     padding-left: 20px;
   }
 
-  ul.menu-options li label i {
+  ul.menu-options li label i, ul.menu-options li Link i {
     display: inline-block;
     width: 20px;
   }

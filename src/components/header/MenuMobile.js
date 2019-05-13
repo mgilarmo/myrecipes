@@ -14,7 +14,7 @@ class MenuMobile extends React.Component {
     return (
       <i 
         className="fas fa-bars mobile-menu" 
-        onClick={() => this.props.toggleBoolean('mobileMenu')} 
+        onClick={() => this.props.toggleBoolean('mobileMenu: false')} 
       />
     );
   }

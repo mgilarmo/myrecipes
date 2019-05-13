@@ -1,29 +1,25 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Modal from '../../components/modal/Modal';
-import RecipeForm from '../header/RecipeForm';
+import WizardForm from '../forms/WizardForm';
 import history from '../history';
 
 
 const CreateRecipe = (props) => {
 
-  const dismiss = () => {
+  const onDismiss = () => {
     history.push('/');
   }
 
-  const actions = () => {
-    return(
-      <React.Fragment>
-        <button className="action-button confirm">Add Recipe</button>
-        <button className="action-button cancel" onClick={dismiss}>Cancel</button>
-      </React.Fragment>
-    );
+  const onSubmit = (formValues) => {
+    this.props.createStream(formValues);
   };
+
 
   return (
     <div>
-      <Modal title="Add a Recipe" actions={actions} onDismiss={dismiss}>
-        <RecipeForm />
+      <Modal title="Add a Recipe" dismiss={onDismiss}>
+        <WizardForm onSubmit={onSubmit} />
       </Modal>
     </div>
   );

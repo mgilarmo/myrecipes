@@ -1,22 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../css/Modal.css';
+import '../../css/Modal.css';
 
 
 const Modal = (props) => {
   return ReactDOM.createPortal(
-    <div 
-      className="modal" 
-      onClick={props.onDismiss}
-    >
-      <div className="modal-box"
-        onClick={e => e.stopPropagation}
-      >
-        <div className="modal-header">
+    <div className="modal">
+      <div className="modal-box">
+        <div className="modal-title">
           {props.title}
+          <i className="fas fa-times close" onClick={props.dismiss} />
         </div>
         <div className="modal-content">
-          {children}
+          {props.children}
         </div>
         <div className="modal-actions">
           {props.actions}

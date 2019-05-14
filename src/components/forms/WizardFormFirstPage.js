@@ -35,6 +35,7 @@ const WizardFormFirstPage = props => {
     <form onSubmit={handleSubmit}>
       <Field
         component={renderInput}
+        position="item-block"
         name="recipeName"
         type="text"
         label="Recipe Name"
@@ -43,6 +44,7 @@ const WizardFormFirstPage = props => {
       />
       <Field
         component={renderInput}
+        position="item-block"
         name="link"
         type="text"
         label="Link"
@@ -72,19 +74,21 @@ const WizardFormFirstPage = props => {
         name="prepTime"
         type="tel"
         label="Prep Time"
+        specifyUnit="(in min)"
       >
-        min
       </Field>
       <Field 
+        component={renderInput}
         name="cookTime"
         type="tel"
-        component={renderInput}
         label="Cook Time"
+        specifyUnit="(in min)"
       />
       <Field 
+        component={renderInput}
+        position="item-block"
         name="hardware"
         type="text"
-        component={renderInput}
         label="Special hardware needed?"
         placeholder="roasting pan, skillet, whisk, etc."
       />

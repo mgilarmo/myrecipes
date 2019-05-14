@@ -40,7 +40,7 @@ class WizardFormThirdPage extends React.Component {
         <Field 
           label="Set Oven Temp"
           type="tel"
-          specify="&deg; F"
+          specifyUnit="&deg; F"
           component={renderInput}
           name="wizard-list oven-temp"
           placeholder="none, if blank"

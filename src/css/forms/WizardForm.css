@@ -19,15 +19,29 @@
 }
 
 .form-item input {
-  width: 100%;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #cccccc;
   margin-top: 3px;
+  margin-right: 3px;
   font-size: 1.6rem;
   outline-color: #333333;
   outline-width: 1px;
 }
+.form-item label {
+  margin-right: 10px;
+}
+
+.form-item label.item-block {
+  display: block;
+  width: 100%;
+}
+
+.form-item input.item-block {
+  display: block;
+  width: 100%;
+}
+
 
 .form-item select {
   font-size: 1.6rem;
@@ -61,6 +75,10 @@
   font-size: 1.6rem;
   outline-color: #333333;
   outline-width: 1px;
+}
+
+input.oven-temp {
+  width: 30px;
 }
 
 .modal-box button {

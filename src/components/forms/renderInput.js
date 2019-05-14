@@ -1,17 +1,18 @@
 import React from 'react';
 
-const renderInput = ({ input, label, placeholder, type, name, specify, meta: { touched, error } }) => (
+const renderInput = ({ input, label, placeholder, type, name, position, specifyUnit, meta: { touched, error } }) => (
   <div className="form-item">
-    <label>
+    <label className={`${position}`}>
       {label}
     </label>
-    <div className={`${name}`}>
-      <input 
-        {...input} 
-        placeholder={placeholder} 
-        type={type} 
-        autoComplete="off"
-      />{specify}
+    <input 
+      {...input} 
+      className={`${position} ${name}`}
+      placeholder={placeholder} 
+      type={type} 
+      autoComplete="off"
+    />{specifyUnit}
+    <div>
       {touched && error && <span>{error}</span>}
     </div>
   </div>

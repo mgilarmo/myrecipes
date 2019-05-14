@@ -1,5 +1,4 @@
 import React from 'react';
-import renderError from './renderError';
 
 const renderSelect = ({ input, label, options, meta: { touched, error } }) => (
   <div className="form-item">

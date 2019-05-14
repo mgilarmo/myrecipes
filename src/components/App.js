@@ -23,8 +23,8 @@ const App = () => {
             <Route path="/" exact component={FindMyRecipes} />
             <Route path="/inspireme" exact component={InspireMe} />
             <Route path="/create" exact component={CreateRecipe} />
-            <Route path="/edit:id" exact component={EditRecipe} />
-            <Route path="/delete:id" exact component={DeleteRecipe} />
+            <Route path="/edit/:id" exact component={EditRecipe} />
+            <Route path="/delete/:id" exact component={DeleteRecipe} />
           </Switch>
         </div>
       </Router>

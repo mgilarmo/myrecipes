@@ -58,7 +58,7 @@ class WizardFormFourthPage extends React.Component {
           <button type="button" className="previous" onClick={this.props.previousPage}>
             Previous
           </button>
-          <button type="submit" className="submit" disabled={this.props.pristine || this.props.submitting}>
+          <button type="submit" className="submit" disabled={this.props.pristine || this.props.submitting} onClick={this.props.onSubmit}>
             Submit
           </button>
         </div>

@@ -38,3 +38,21 @@
   font-size: 1.6rem;
   cursor: pointer;
 }
+
+.modal-box button {
+  padding: 5px 10px;
+  background-color: rgb(255, 200, 0);
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 2.0rem;
+  outline-color: #333333;
+  outline-width: 1px;
+}
+
+.modal-box button.confirm-action {
+  float: right;
+}
+
+.modal-box button.cancel-action {
+  float: left;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const renderInput = ({ input, label, placeholder, type, name, meta: { touched, error } }) => (
+const renderInput = ({ input, label, placeholder, type, name, specify, meta: { touched, error } }) => (
   <div className="form-item">
     <label>
       {label}
@@ -11,10 +11,10 @@ const renderInput = ({ input, label, placeholder, type, name, meta: { touched, e
         placeholder={placeholder} 
         type={type} 
         autoComplete="off"
-      />
+      />{specify}
       {touched && error && <span>{error}</span>}
     </div>
   </div>
 )
 
-export default renderInput
+export default renderInput;

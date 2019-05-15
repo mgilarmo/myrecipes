@@ -374,7 +374,7 @@ const recipes = [
       "1 tablespoons red wine vinegar",
       "Coarse grain salt",
       "Freshly ground black pepper",
-      "Smoked Spanish paprika, for garnish",
+      "Smoked Spanish paprika, for garnish"
     ],
     "directions": [
       "Place eggs in a single layer in a saucepan and cover with enough water that there's 1 1/2 inches of water above the eggs. Heat on high until water begins to boil, then cover, turn the heat to low, and cook for 1 minute. Remove from heat and leave covered for 14 minutes, then rinse under cold water continuously for 1 minute.",

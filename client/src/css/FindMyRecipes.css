@@ -1,0 +1,30 @@
+.recipe-selected-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-template-areas:
+    "recipe videos";
+  grid-gap: 10px;
+  margin-top: 30px;
+}
+
+.recipe-selected {
+  grid-area: recipe;
+  margin-bottom: 60px;
+}
+
+.recipe-videos {
+  grid-area: videos;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 750px) {
+  .recipe-selected-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "recipe" "videos";
+    grid-gap: 10px;
+    margin-top: 30px;
+  }
+}

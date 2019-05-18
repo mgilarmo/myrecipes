@@ -13,7 +13,7 @@ const CreateRecipe = (props) => {
   }
 
   const onSubmit = (formValues) => {
-    console.log(formValues);
+    props.createRecipe(formValues);
   };
 
   return (
@@ -27,7 +27,7 @@ const CreateRecipe = (props) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createRecipe: dispatch(createRecipe)
+    createRecipe: (formValues) => dispatch(createRecipe(formValues))
   }
 }
 

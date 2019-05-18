@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import Modal from '../modal/Modal';
 import history from '../history';
+import {deleteRecipe} from '../../actions/actions';
 import '../../css/crud/DeleteRecipe.css'
 
 
@@ -16,7 +17,7 @@ const DeleteRecipe = (props) => {
     <React.Fragment>
       <button 
         className="confirm-action"
-        onClick={() => this.props.deleteStream(this.props.match.params.id)}
+        onClick={() => props.deleteRecipe(props.selectedRecipeId)}
       >
         Delete
       </button>
@@ -56,8 +57,15 @@ const mapStateToProps = (state) => {
     selectedRecipeId: state.ui.selectedRecipeId,
     selectedRecipeName: state.ui.selectedRecipeName
   }
-}
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    deleteRecipe: dispatch(deleteRecipe)
+  }
+};
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(DeleteRecipe);

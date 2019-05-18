@@ -12,26 +12,37 @@ const EditRecipe = (props) => {
     history.push('/');
   }
 
-  const onRecipeSubmit = (formValues) => {
+  const onSubmit = (formValues) => {
     props.editRecipe(formValues);
   };
+
+  const findRecipe = props.recipes.find(recipe => recipe.id === props.selectedRecipeId);
 
   return (
     <div>
       <Modal title="Edit this Recipe" dismiss={onDismiss}>
-        <WizardForm onSubmit={onRecipeSubmit} />
+        <WizardForm 
+          onSubmit={onSubmit} 
+          initialValues={findRecipe} />
       </Modal>
     </div>
   );
 };
 
+const maptStateToProps = (state) => {
+  return {
+    selectedRecipeId: state.ui.selectedRecipeId,
+    recipes: state.recipes.recipes
+  }
+}
+
 const mapDispatchToProps = (dispatch) => {
   return {
-    editRecipe: dispatch(editRecipe)
+    editRecipe: (formValues) => dispatch(editRecipe(formValues))
   }
 }
 
 export default connect(
-  null,
+  maptStateToProps,
   mapDispatchToProps
 )(EditRecipe);

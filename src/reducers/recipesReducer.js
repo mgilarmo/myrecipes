@@ -1,38 +1,45 @@
-import Recipes from '../components/main/Recipes';
-
 import {
+  ADD_FIREBASE_TO_STORE,
   CREATE_RECIPE,
-  EDIT_RECIPE
+  DELETE_RECIPE,
+  EDIT_RECIPE,
+  FETCH_RECIPES
 } from '../actions/types';
 
 
 const INITIAL_STATE = {
-  recipes: Recipes
+  recipes: [],
+  firebase: null
 };
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case ADD_FIREBASE_TO_STORE:
+      return {
+        ...state,
+        firebase: action.payload
+      }
+    case FETCH_RECIPES:
+      return {
+        ...state,
+        recipes: action.payload
+      }
     case CREATE_RECIPE:
       return {
         ...state,
-        ...{
-          ...action.payload, 
-          ingredients: Object.values(action.payload.ingredients),
-          direction: Object.values(action.payload.direction),
-          notes: Object.values(action.payload.notes)
-        },
-      };
+        recipes: [...state.recipes, action.payload]
+      }
+    //   return firebase.database().ref('recipes/').set(action.payload);
     case EDIT_RECIPE:
       return {
         ...state,
-        ...{
-          ...action.payload, 
-          ingredients: Object.values(action.payload.ingredients),
-          direction: Object.values(action.payload.direction),
-          notes: Object.values(action.payload.notes)
-        },
+        recipes: [...state.recipes.id, action.payload]
       };
+    case DELETE_RECIPE:
+      return action.payload.id
     default:
       return state;
   }
 };
+
+

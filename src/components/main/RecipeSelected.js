@@ -1,18 +1,17 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import Recipes from './Recipes';
 import '../../css/main/RecipeSelected.css';
 
 
 const RecipeSelected = (props) => {
 
-  const findRecipe = Recipes.find(recipe => recipe.id === props.selectedRecipeId);
+  const findRecipe = props.recipes.find(recipe => recipe.id === props.selectedRecipeId);
 
   if(!findRecipe) {
     return <div></div>;
   }
-
+  console.log(findRecipe);
   return (
     <div className="selected-recipe">
       <div className="edit-delete-recipe">
@@ -45,9 +44,7 @@ const RecipeSelected = (props) => {
         Hardware:
       </div>
       <div className="hardware-list">
-        <ul>
-          {findRecipe.hardware.map((item, i) => <li key={i}>{item}</li>)}
-        </ul>
+        {findRecipe.hardware}
       </div>
       <div className="ingredients">
         Ingredients:
@@ -70,7 +67,7 @@ const RecipeSelected = (props) => {
       </div>
       <div className="notes-list">
         <ul>
-          {findRecipe.notes.map((item, i) => <li key={i}>{item}</li>)}
+          {findRecipe.notes && findRecipe.notes.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       </div>
     </div>
@@ -79,7 +76,8 @@ const RecipeSelected = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    selectedRecipeId: state.ui.selectedRecipeId
+    selectedRecipeId: state.ui.selectedRecipeId,
+    recipes: state.recipes.recipes
   }
 }
 

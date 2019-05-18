@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Recipes from './Recipes';
 import {showRecipeAndVideos} from '../../actions/actions';
 import '../../css/main/SearchResults.css';
 
@@ -26,7 +25,7 @@ const SearchResults = (props) => {
   };
   
   let filteredRecipes = []
-  let sortedRecipes = [...Recipes].sort(compareValues('recipeName'))
+  let sortedRecipes = [...props.recipes].sort(compareValues('recipeName'))
 
   if(props.showAllRecipes) {
     filteredRecipes = sortedRecipes;
@@ -56,7 +55,8 @@ const SearchResults = (props) => {
 const mapStateToProps = (state) => {
   return {
     term: state.ui.term,
-    showAllRecipes: state.ui.showAllRecipes
+    showAllRecipes: state.ui.showAllRecipes,
+    recipes: state.recipes.recipes
   }
 }
 

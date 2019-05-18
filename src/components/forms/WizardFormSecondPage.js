@@ -25,8 +25,35 @@ class WizardFormSecondPage extends React.Component {
       ingreds: [...prevState.ingreds, {name:""}],
     }));
   }
-    
+  
+  dynamicInput(ingr) {
+    return (
+      <FormSection name="ingredients" component="div" className="wizard-list">
+        {
+          ingr.map((val, i)=> {
+            let ingrId = `ingr-${i}`
+            return (
+              <Field
+                component={renderInputList}
+                label={`${i + 1})`}
+                type="text"
+                name={ingrId}
+                key={i}
+                data-id={i}
+                value={this.props.initialValues.ingredients === [] ? ingr[i].name : this.props.initialValues.ingredients[i]} 
+                id={ingrId}
+                className={ingrId}
+              />
+            );
+          })
+        }
+      </FormSection>
+    );
+  }
+
   render() {
+    console.log(this.props.initialValues)
+
     return (
       <form onSubmit={this.props.handleSubmit} onChange={this.handleChange} >
         <div className="wizard-title">
@@ -36,26 +63,7 @@ class WizardFormSecondPage extends React.Component {
             Add another ingredient
           </label>
         </div>
-        <FormSection name="ingredients" component="div" className="wizard-list">
-          {
-            this.state.ingreds.map((val, i)=> {
-              let ingrId = `ingr-${i}`
-              return (
-                <Field
-                  component={renderInputList}
-                  label={`${i + 1})`}
-                  type="text"
-                  name={ingrId}
-                  key={i}
-                  data-id={i}
-                  value={this.state.ingreds[i].name} 
-                  id={ingrId}
-                  className={ingrId}
-                />
-              );
-            })
-          }
-        </FormSection>
+        {this.props.initialValues.ingredients === [] ? this.dynamicInput(this.state.ingreds) : this.dynamicInput(this.props.initialValues.ingredients)}
         <div>
           <button type="button" className="previous" onClick={this.props.previousPage}>
             Previous

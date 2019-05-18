@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-grid">
         <div className="footer-item-copyright">
-          &copy; My Recipes, 2019
+          &copy; 2019, My Recipes
         </div>
         <div className="footer-item-social">
           <i className="fab fa-facebook-square" />

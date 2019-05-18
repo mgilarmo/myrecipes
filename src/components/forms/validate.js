@@ -12,10 +12,10 @@ const validate = formValues => {
   if (!formValues.typeOfDiet) {
     errors.typeOfDiet = 'Select a type of diet'
   }
-  if (!formValues.prepTime) {
+  if (!formValues.prepTime || isNaN(formValues.prepTime)) {
     errors.prepTime = 'Enter the Prep Time, in minutes'
   }
-  if (!formValues.cookTime) {
+  if (!formValues.cookTime || isNaN(formValues.cookTime)) {
     errors.cookTime = 'Enter the Cook Time, in minutes'
   }
   return errors

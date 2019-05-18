@@ -26,23 +26,27 @@ class WizardForm extends Component {
       <div>
         {this.state.page === 1 && (
           <WizardFormFirstPage 
+            initialValues={this.props.initialValues}
             onSubmit={this.nextPage} 
           />
         )}
         {this.state.page === 2 && (
           <WizardFormSecondPage
+            initialValues={this.props.initialValues}
             previousPage={this.previousPage}
             onSubmit={this.nextPage}
           />
         )}
         {this.state.page === 3 && (
           <WizardFormThirdPage
+            initialValues={this.props.initialValues}
             previousPage={this.previousPage}
             onSubmit={this.nextPage}
           />
         )}
         {this.state.page === 4 && (
           <WizardFormFourthPage
+            initialValues={this.props.initialValues}
             previousPage={this.previousPage}
             onSubmit={this.props.onSubmit}
           />

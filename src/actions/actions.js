@@ -1,8 +1,13 @@
 import youtube from '../apis/youtube';
+import Firebase from '../apis/firebase';
+import app from 'firebase/app';
 
 import {
+  ADD_FIREBASE_TO_STORE,
   CREATE_RECIPE,
+  DELETE_RECIPE,
   EDIT_RECIPE,
+  FETCH_RECIPES,
   FETCH_VIDEOS,
   GENERIC,
   SEARCHING_RECIPES, 
@@ -93,16 +98,74 @@ export const fetchYouTubeVideos = (name) => async (dispatch) => {
 //   })
 // }
 
-export const createRecipe = (formValues) => {
-  return {
-    type: CREATE_RECIPE,
-    payload: formValues
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyBqEZartVLP4lj1lXTbeIsXdhObqb7e85A",
+  authDomain: "myrecipes-53223.firebaseapp.com",
+  databaseURL: "https://myrecipes-53223.firebaseio.com",
+  projectId: "myrecipes-53223",
+  storageBucket: "myrecipes-53223.appspot.com",
+  messagingSenderId: "10245129962",
+  appId: "1:10245129962:web:2f91a6dd47aafb57"
 };
 
-export const editRecipe = (formValues) => {
-  return {
-    type: EDIT_RECIPE,
-    payload: formValues
-  };
+
+export const initializeFirebase = () => async (dispatch) => {
+  const init = await app.initializeApp(firebaseConfig);
+  const recipes = init.database().ref('recipes');
+
+  recipes.on('child_added', (data) => {
+    dispatch({ type: CREATE_RECIPE, payload: data.val()})
+  })
+
+  dispatch({ type: ADD_FIREBASE_TO_STORE, payload: init })
+
+  // dispatch(fetchRecipes(init))
+}
+
+export const createRecipe = (formValues) => async (dispatch, getState) => {
+  const id = Date.now();
+  const recipes = getState().recipes.firebase.database().ref('recipes/' + id)
+  console.log(formValues)
+  const update = {
+    id
+  }
+
+  Object.keys(formValues).forEach((key) => {
+    if (typeof formValues[key] === 'object'){
+      update[key] = Object.values(formValues[key])
+    } else {
+      update[key] = formValues[key]
+    }
+  })
+
+  await recipes.set(update);
+  // dispatch({type: CREATE_RECIPE, payload: response})
+};
+
+export const editRecipe = (id, formValues) => async (dispatch) => {
+  const response = await Firebase.recipe(id).set(formValues);
+  dispatch({type: EDIT_RECIPE, payload: response})
+};
+
+export const deleteRecipe = (id) => async (dispatch, getState) => {
+  const removeRecipe = getState().recipes.firebase.database().ref('recipes/' + id)
+  await removeRecipe.remove(id);
+  // dispatch({type: DELETE_RECIPE, payload: response})
+};
+
+
+
+// export const deleteRecipe = (id) => async (dispatch) => {
+//   await Firebase.recipe(id);
+//   dispatch({type: DELETE_RECIPE, payload: id})
+// };
+
+export const fetchRecipes = (firebase) => async (dispatch) => {
+  const recipes = [];
+  await firebase.database().ref('recipes').once('value', (snapshot) => {
+    snapshot.forEach((ele) => {
+      recipes.push(ele.val())
+    })
+  });
+  dispatch({type: FETCH_RECIPES, payload: recipes})
 };

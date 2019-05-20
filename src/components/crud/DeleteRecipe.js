@@ -61,7 +61,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    deleteRecipe: dispatch(deleteRecipe)
+    deleteRecipe: (id) => dispatch(deleteRecipe(id))
   }
 };
 

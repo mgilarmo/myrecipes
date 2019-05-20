@@ -56,3 +56,10 @@
 .modal-box button.cancel-action {
   float: left;
 }
+
+.modal-content {
+  height: 400px;
+  overflow-y: auto;
+  padding-left: 20px;
+  padding-right: 30px;
+}

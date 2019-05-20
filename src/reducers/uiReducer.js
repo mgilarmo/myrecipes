@@ -1,4 +1,5 @@
 import {
+  DELETE_RECIPE,
   FETCH_VIDEOS,
   GENERIC,
   SEARCHING_RECIPES,
@@ -44,6 +45,14 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         videos: action.payload
+      };
+    case DELETE_RECIPE:
+      return {
+        ...state,
+        term: INITIAL_STATE.term,
+        selectedRecipeId: action.payload.id,
+        selectedRecipeName: action.payload.name,
+        videos: INITIAL_STATE.videos
       };
     default:
       return state;

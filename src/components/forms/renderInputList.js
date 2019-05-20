@@ -14,6 +14,14 @@ const renderInputList = (formProps) => (
         data-id={formProps.dataId}
         autoComplete="off"
       />
+      <button
+        className="remove-list-item"
+        type="button"
+        title="Remove Ingredient"
+        onClick={formProps.onRemoveClick}
+      >
+        <i className="fas fa-minus" />
+      </button>
     </div>
   </div>
 )

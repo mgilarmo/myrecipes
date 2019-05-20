@@ -1,6 +1,8 @@
 import youtube from '../apis/youtube';
 import Firebase from '../apis/firebase';
 import app from 'firebase/app';
+import history from '../components/history';
+
 
 import {
   ADD_FIREBASE_TO_STORE,
@@ -15,6 +17,8 @@ import {
   SIGN_IN, 
   SIGN_OUT, 
   TOGGLE_BOOLEAN, 
+  WIZARD_PAGE_NEXT,
+  WIZARD_PAGE_PREVIOUS
 } from './types';
 
 export const signIn = (userId) => {
@@ -82,8 +86,6 @@ export const fetchYouTubeVideos = (name) => async (dispatch) => {
   );
   return dispatch({type: FETCH_VIDEOS, payload: response.data.items});
 };
-
-
 // USING PROMISE WITH .THEN()
 // export const fetchYouTubeVideos = (name) => (dispatch) => {
 //   return fetch(`https://www.googleapis.com/youtube/v3/search?q=${name}&part=snippet&maxResults=5&key=AIzaSyD6Stv0Gvx3yjZCG34Jc4PcKL2FCbkLIkw`)
@@ -117,9 +119,15 @@ export const initializeFirebase = () => async (dispatch) => {
     dispatch({ type: CREATE_RECIPE, payload: data.val()})
   })
 
-  dispatch({ type: ADD_FIREBASE_TO_STORE, payload: init })
+  recipes.on('child_removed', (data) => {
+    dispatch({ type: DELETE_RECIPE, payload: data.key})
+    console.log(data.key);
 
-  // dispatch(fetchRecipes(init))
+  })
+  
+  
+
+  dispatch({ type: ADD_FIREBASE_TO_STORE, payload: init })
 }
 
 export const createRecipe = (formValues) => async (dispatch, getState) => {
@@ -139,7 +147,7 @@ export const createRecipe = (formValues) => async (dispatch, getState) => {
   })
 
   await recipes.set(update);
-  // dispatch({type: CREATE_RECIPE, payload: response})
+  history.push('/');
 };
 
 export const editRecipe = (id, formValues) => async (dispatch) => {
@@ -148,17 +156,12 @@ export const editRecipe = (id, formValues) => async (dispatch) => {
 };
 
 export const deleteRecipe = (id) => async (dispatch, getState) => {
-  const removeRecipe = getState().recipes.firebase.database().ref('recipes/' + id)
-  await removeRecipe.remove(id);
+  const removeRecipe = getState().recipes.firebase.database().ref(`recipes/${id}`)
+  history.push('/');
+
+  await removeRecipe.remove();
   // dispatch({type: DELETE_RECIPE, payload: response})
 };
-
-
-
-// export const deleteRecipe = (id) => async (dispatch) => {
-//   await Firebase.recipe(id);
-//   dispatch({type: DELETE_RECIPE, payload: id})
-// };
 
 export const fetchRecipes = (firebase) => async (dispatch) => {
   const recipes = [];
@@ -168,4 +171,19 @@ export const fetchRecipes = (firebase) => async (dispatch) => {
     })
   });
   dispatch({type: FETCH_RECIPES, payload: recipes})
+};
+
+
+export const wizardPageNext = () => {
+  return {
+    type: WIZARD_PAGE_NEXT,
+    payload: 1
+  };
+};
+ 
+export const wizardPagePrevious = () => {
+  return {
+    type: WIZARD_PAGE_PREVIOUS,
+    payload: -1
+  };
 };

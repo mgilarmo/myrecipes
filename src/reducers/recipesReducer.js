@@ -36,7 +36,7 @@ export default (state = INITIAL_STATE, action) => {
         recipes: [...state.recipes.id, action.payload]
       };
     case DELETE_RECIPE:
-      return action.payload.id
+      return {...state, recipes: [...state.recipes.filter((recipe) => recipe.id !== action.payload)]}
     default:
       return state;
   }

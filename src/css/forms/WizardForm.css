@@ -28,6 +28,7 @@
   outline-color: #333333;
   outline-width: 1px;
 }
+
 .form-item label {
   margin-right: 10px;
 }
@@ -41,7 +42,6 @@
   display: block;
   width: 100%;
 }
-
 
 .form-item select {
   font-size: 1.6rem;
@@ -72,13 +72,17 @@
 
 .form-list-input-item {
   grid-area: item;
+  display: flex;
 }
 
 .form-list-input-item input {
-  width: 100%;
+  flex-grow: 2;
   padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #cccccc;
+  border-radius: 5px 0 0 5px;
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-right: 0;
   font-size: 1.6rem;
   outline-color: #333333;
   outline-width: 1px;
@@ -86,6 +90,10 @@
 
 input.oven-temp {
   width: 30px;
+}
+
+.modal-content ul {
+  list-style: none;
 }
 
 .modal-box button {
@@ -108,4 +116,16 @@ input.oven-temp {
 
 .modal-box label {
   font-weight: 600;
+}
+
+button.remove-list-item {
+  color: #ffffff;
+  background-color: rgb(184, 0, 0);
+  font-size: 1.4rem;
+  border-radius: 0 5px 5px 0;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 0;
+  padding: 6px 10px 5px 10px;
 }

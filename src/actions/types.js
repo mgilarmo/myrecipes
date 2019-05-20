@@ -10,3 +10,6 @@ export const SELECT_RECIPE_CARD = 'SELECT_RECIPE_CARD';
 export const SIGN_IN = 'SIGN_IN';
 export const SIGN_OUT = 'SIGN_OUT';
 export const TOGGLE_BOOLEAN = 'TOGGLE_BOOLEAN';
+export const WIZARD_PAGE_NEXT = 'WIZARD_PAGE_NEXT';
+export const WIZARD_PAGE_PREVIOUS = 'WIZARD_PAGE_PREVIOUS';
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
+import {Field, reduxForm} from 'redux-form';
 import validate from './validate';
 import renderInput from './renderInput';
 import renderSelect from './renderSelect';
@@ -34,6 +34,7 @@ const WizardFormFirstPage = props => {
     'vegetarian', 
     'other'
   ];
+  
   return (
     <form onSubmit={props.handleSubmit}>
       <Field

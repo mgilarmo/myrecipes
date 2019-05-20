@@ -1,73 +1,50 @@
 import React from 'react';
-import { Field, FormSection, reduxForm } from 'redux-form';
+import {Field, FieldArray, reduxForm} from 'redux-form';
 import renderInputList from './renderInputList';
 import validate from './validate';
 
 
-class WizardFormFourthPage extends React.Component {
+const renderNotes = (props) => (
+  <div>
+    <div className="wizard-title">
+      <label>Notes</label> 
+      <label className="add-input-field" onClick={() => props.fields.push()}>
+        <i className="fa fa-plus" />
+        Add note
+      </label>
+    </div>
+    <ul>
+      {props.fields.map((note, index) => (
+        <li key={index}>
+          <Field
+            name={note}
+            type="text"
+            component={renderInputList}
+            label={`${index + 1})`}
+            onRemoveClick={() => props.fields.remove(index)}
+          />
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
-  state = {
-    notes: [{name:""}]
-  }
-  
-  handleChange = (e) => {
-    if (["name"].includes(e.target.className) ) {
-      let notes = [...this.state.notes]
-      notes[e.target.dataset.id][e.target.className] = e.target.value
-      this.setState({ notes })
-    } else {
-      this.setState({ [e.target.name]: e.target.value })
-    }
-  }
-  
-  addIngr = (e) => {
-    this.setState((prevState) => ({
-      notes: [...prevState.notes, {name:""}],
-    }));
-  }
-    
-  render() {
-    return (
-      <form onSubmit={this.props.handleSubmit(this.props.onSubmit)} onChange={this.handleChange} >
-        <div className="wizard-title">
-          <label>Notes</label> 
-          <label className="add-input-field" onClick={this.addIngr}>
-            <i className="fa fa-plus" />
-            Add another note
-          </label>
-        </div>
-        <FormSection name="notes" component="div" className="wizard-list">
-          {
-            this.state.notes.map((val, i)=> {
-              let noteId = `note-${i}`
-              return (
-                <Field
-                  component={renderInputList}
-                  label={`${i + 1})`}
-                  type="text"
-                  name={noteId}
-                  key={i}
-                  data-id={i}
-                  value={this.state.notes[i].name} 
-                  id={noteId}
-                  className={noteId}
-                />
-              );
-            })
-          }
-        </FormSection>
-        <div>
-          <button type="button" className="previous" onClick={this.props.previousPage}>
-            Previous
-          </button>
-          <button type="submit" className="submit" disabled={this.props.pristine || this.props.submitting}>
-            Submit
-          </button>
-        </div>
-      </form>
-    );
-  }
+const WizardFormFourthPage = (props) => {
+  return (
+    <form onSubmit={props.handleSubmit(props.onSubmit)}>
+      <FieldArray name="notes" component={renderNotes} />
+      <div>
+        <button type="button" className="previous" onClick={props.previousPage}>
+          Previous
+        </button>
+        <button type="submit" className="submit" disabled={props.pristine || props.submitting}>
+          Submit
+        </button>
+      </div>
+    </form>
+  );
 }
+
 export default reduxForm({
   form: 'recipeWizard', //Form name is same
   destroyOnUnmount: false,

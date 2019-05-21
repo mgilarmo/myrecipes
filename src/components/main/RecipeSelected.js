@@ -50,7 +50,7 @@ const RecipeSelected = (props) => {
       </div>
       <div className="ingredients-list">
         <ul>
-          {findRecipe.ingredients.map((item, i) => <li key={i}>{item}</li>)}
+          {findRecipe.ingredients ? findRecipe.ingredients.map((item, i) => <li key={i}>{item}</li>) : <li>none</li>}
         </ul>
       </div>
       <div className="directions">
@@ -58,7 +58,7 @@ const RecipeSelected = (props) => {
       </div>
       <div className="directions-list">
         <ol>
-          {findRecipe.directions.map((item, i) => <li key={i}>{item}</li>)}
+          {findRecipe.directions ? findRecipe.directions.map((item, i) => <li key={i}>{item}</li>) : <li>none</li>}
         </ol>
       </div>
       <div className="notes">
@@ -66,7 +66,7 @@ const RecipeSelected = (props) => {
       </div>
       <div className="notes-list">
         <ul>
-          {findRecipe.notes && findRecipe.notes.map((item, i) => <li key={i}>{item}</li>)}
+        {findRecipe.notes ? findRecipe.notes.map((item, i) => <li key={i}>{item}</li>) : <li>none</li>}
         </ul>
       </div>
     </div>

@@ -20,7 +20,7 @@ const EditRecipe = (props) => {
 
   return (
     <div>
-      <Modal title="Edit this Recipe" dismiss={onDismiss}>
+      <Modal title="Edit this Recipe" dismiss={onDismiss} purpose="edit">
         <WizardForm 
           onSubmit={onSubmit} 
           initialValues={findRecipe} />

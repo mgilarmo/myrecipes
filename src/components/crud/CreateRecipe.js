@@ -18,7 +18,7 @@ const CreateRecipe = (props) => {
 
   return (
     <div>
-      <Modal title="Add a Recipe" dismiss={onDismiss}>
+      <Modal title="Add a Recipe" dismiss={onDismiss} purpose="create">
         <WizardForm onSubmit={onSubmit} />
       </Modal>
     </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {connect} from 'react-redux'
 import ReactDOM from 'react-dom';
@@ -6,10 +5,10 @@ import {destroy} from 'redux-form';
 import '../../css/Modal.css';
 
 
-const Modal = (props) => {
+const Modal = (props) => { 
   return ReactDOM.createPortal(
     <div className="modal">
-      <div className="modal-box">
+      <div className={`modal-box ${props.purpose}`}>
         <div className="modal-title">
           {props.title}
           <i 
@@ -20,16 +19,10 @@ const Modal = (props) => {
             }}
           />
         </div>
-        <div className="modal-content">
+        <div className={`modal-content ${props.purpose}`}>
           {props.children}
         </div>
         <div className="modal-actions">
-          <div className="action-back">
-            {props.actionBack}
-          </div>
-          <div className="action-forward">
-            {props.actionForward}
-          </div>
         </div>
       </div>
     </div>,
@@ -37,10 +30,9 @@ const Modal = (props) => {
   );
 };
 
-
 const mapDispatchToProps = (dispatch) => {
   return {
-    destroy: (form) => dispatch(destroy(form))
+    destroy: (form) => dispatch(destroy(form)),
   }
 }
 

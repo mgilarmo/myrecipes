@@ -29,14 +29,17 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         recipes: [...state.recipes, action.payload]
       }
-    //   return firebase.database().ref('recipes/').set(action.payload);
     case EDIT_RECIPE:
+      console.log(action.payload);
       return {
         ...state,
-        recipes: [...state.recipes.id, action.payload]
+        recipes: [...state.recipes.map((recipe) => recipe.id === action.payload.id ? action.payload : recipe)]
       };
     case DELETE_RECIPE:
-      return {...state, recipes: [...state.recipes.filter((recipe) => recipe.id !== action.payload)]}
+      return {
+        ...state, 
+        recipes: [...state.recipes.filter((recipe) => recipe.id !== action.payload.id)]
+      }
     default:
       return state;
   }

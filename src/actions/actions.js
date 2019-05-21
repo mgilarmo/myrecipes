@@ -120,11 +120,12 @@ export const initializeFirebase = () => async (dispatch) => {
   })
 
   recipes.on('child_removed', (data) => {
-    dispatch({ type: DELETE_RECIPE, payload: data.key})
-    console.log(data.key);
-
+    dispatch({ type: DELETE_RECIPE, payload: data.val()})
   })
   
+  recipes.on('child_changed', (data) => {
+    dispatch({ type: EDIT_RECIPE, payload: data.val()})
+  })
   
 
   dispatch({ type: ADD_FIREBASE_TO_STORE, payload: init })
@@ -133,7 +134,6 @@ export const initializeFirebase = () => async (dispatch) => {
 export const createRecipe = (formValues) => async (dispatch, getState) => {
   const id = Date.now();
   const recipes = getState().recipes.firebase.database().ref('recipes/' + id)
-  console.log(formValues)
   const update = {
     id
   }
@@ -150,9 +150,13 @@ export const createRecipe = (formValues) => async (dispatch, getState) => {
   history.push('/');
 };
 
-export const editRecipe = (id, formValues) => async (dispatch) => {
-  const response = await Firebase.recipe(id).set(formValues);
-  dispatch({type: EDIT_RECIPE, payload: response})
+export const editRecipe = (formValues) => async (dispatch, getState) => {
+  const editRecipe = getState().recipes.firebase.database().ref()
+  history.push('/');
+  const updates={};
+  updates[`recipes/${formValues.id}`] = formValues
+
+  await editRecipe.update(updates);
 };
 
 export const deleteRecipe = (id) => async (dispatch, getState) => {

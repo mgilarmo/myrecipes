@@ -11,7 +11,6 @@ const RecipeSelected = (props) => {
   if(!findRecipe) {
     return <div></div>;
   }
-  console.log(findRecipe);
   return (
     <div className="selected-recipe">
       <div className="edit-delete-recipe">

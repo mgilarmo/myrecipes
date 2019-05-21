@@ -108,6 +108,7 @@ input.oven-temp {
 
 .modal-box button.next, .modal-box button.submit {
   float: right;
+  margin-top: 30px;
 }
 
 .modal-box button.previous {

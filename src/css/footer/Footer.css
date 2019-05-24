@@ -8,7 +8,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 170px;
   grid-template-areas:
     "copyright social";
   grid-gap: 10px;

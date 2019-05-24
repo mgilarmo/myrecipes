@@ -35,8 +35,10 @@ const SearchResults = (props) => {
         JSON.stringify(recipe).toLowerCase().indexOf(props.term.toLowerCase()) > -1) :
     [];    
   }
+
+  const searchResultsBorder = filteredRecipes.length > 0 ? " search-results-border" : "";
   return (
-    <div className="recipe-card-results">
+    <div className={`recipe-card-results${searchResultsBorder}`}>
       {filteredRecipes.map((recipe) => 
         <div 
           className="recipe-card"

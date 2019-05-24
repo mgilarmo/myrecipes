@@ -9,7 +9,7 @@ const MenuOptions = (props) => {
   return (
     <ul className="menu-options">
       <li>
-        <label id="addRecipe">
+        <label id="addRecipe" onClick={() => props.toggleBoolean('mobileMenu')}>
           <Link to={'/create'}>
             <i className="fas fa-plus" />
             <div>Add a Recipe</div>
@@ -19,7 +19,10 @@ const MenuOptions = (props) => {
       <li>
         <label 
           id="showAllRecipes"
-          onClick={() => props.toggleBoolean('showAllRecipes')}
+          onClick={() => {
+            props.toggleBoolean('showAllRecipes'); 
+            props.toggleBoolean('mobileMenu')
+          }}
         >
           <Link to='/'>
             <i className="fas fa-book-open" />
@@ -28,7 +31,7 @@ const MenuOptions = (props) => {
         </label>
       </li>
       <li>
-        <label id="inspireMe">
+        <label id="inspireMe" onClick={() => props.toggleBoolean('mobileMenu')}>
           <Link to='/inspireme'>
             <i className="far fa-lightbulb" />
             <div>Inspire Me</div>

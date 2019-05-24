@@ -14,16 +14,16 @@ const RecipeSelected = (props) => {
   return (
     <div className="selected-recipe">
       <div className="edit-delete-recipe">
-        <button className="edit-recipe">
-          <Link to={`/edit/${props.selectedRecipeId}`}>
+        <Link to={`/edit/${props.selectedRecipeId}`}>
+          <button className="edit-recipe">
             <i className="fas fa-pen" />
-          </Link>
-        </button>
-        <button className="delete-recipe">
-          <Link to={`/delete/${props.selectedRecipeId}`}>
+          </button>
+        </Link>
+        <Link to={`/delete/${props.selectedRecipeId}`}>
+          <button className="delete-recipe">
             <i className="fas fa-trash-alt" />
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className="recipe-name">
         <a href={findRecipe.link} target="_blank" rel="noreferrer noopener" >

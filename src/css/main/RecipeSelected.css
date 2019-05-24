@@ -7,7 +7,7 @@
 }
 
 .edit-recipe, .delete-recipe {
-  background-color: #ffffff;
+  background-color: #dddddd;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -16,14 +16,27 @@
   outline-width: 1px;
 }
 
+.edit-recipe i, .delete-recipe i {
+  color: #888888;
+}
+
 .edit-recipe:hover, .delete-recipe:hover {
-  background-color: #323f27;
+  background-color: #5a7247;
+  color: #ffffff;
+}
+
+.edit-recipe:hover i, .delete-recipe:hover i {
+  color: #ffffff;
 }
 
 .recipe-name {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.recipe-name a {
+  color: #333333;
 }
 
 .recipe-name a:hover {

@@ -14,7 +14,7 @@ const TopBar = (props) => {
       <div className="topbar-grid">
         <div className="topbar-item-image">
           <Link to="/">
-            <img alt="Basil Leaf" src="/images/BasilLeaf.jpg"/>
+            <img alt="large pot" src="/images/pot.png"/>
           </Link>
         </div>
         <div className="topbar-item-site">

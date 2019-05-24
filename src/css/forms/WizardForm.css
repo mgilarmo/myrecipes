@@ -113,6 +113,8 @@ input.oven-temp {
 
 .modal-box button.previous {
   float: left;
+  margin-top: 30px;
+
 }
 
 .modal-box label {

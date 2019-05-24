@@ -1,6 +1,7 @@
 .mobile-menu {
   cursor: pointer;
   font-size: 3.0rem;
+  color: #ffffff;
 }
 
 @media (max-width: 375px) {

@@ -65,6 +65,7 @@ div.menu-mobile {
   
   div.menu-mobile.open {
     display: block;
+
   }
 }
 

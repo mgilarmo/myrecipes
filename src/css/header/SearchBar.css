@@ -10,9 +10,9 @@
   font-size: 1.8rem;
   outline: none;
   border-radius: 30px;
-  border: 1px solid rgb(255, 200, 0);
+  border: 1px solid #5cdb95;
   box-shadow: 0 0 3px 0 #333;
-  background-color: rgb(255, 245, 211); 
+  background-color: #edeae5; 
 }
 
 @media (max-width: 1000px) {

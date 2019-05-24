@@ -43,7 +43,7 @@ const RecipeSelected = (props) => {
         Hardware:
       </div>
       <div className="hardware-list">
-        {findRecipe.hardware}
+        {findRecipe.hardware ? findRecipe.hardware : 'none'}
       </div>
       <div className="ingredients">
         Ingredients:

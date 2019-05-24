@@ -1,5 +1,5 @@
 .header {
-  background-color: rgb(255, 200, 0);
+  background-color: #5cdb95;
   position: fixed;
   width: 100%;
   box-shadow: 0 2px 2px -2px gray;
@@ -21,7 +21,7 @@
 
 
 .footer {
-  background-color: rgb(255, 200, 0);
+  background-color: #5cdb95;
   position: fixed;
   bottom: 0;
   width: 100%;

@@ -12,6 +12,7 @@ const WizardFormFirstPage = props => {
     'breakfast', 
     'dessert',
     'dinner',
+    'dip or salsa',
     'drink',
     'lunch',
     'main dish', 

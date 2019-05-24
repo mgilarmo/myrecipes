@@ -6,11 +6,13 @@
 
   ul.menu-options label {
     cursor: pointer;
+    outline-color: #388d5e;
   }
 
   ul.menu-options li {
     display: inline;
     padding-left: 20px;
+    outline-color: #388d5e;
   }
 
   ul.menu-options li label i, ul.menu-options li Link i {
@@ -47,7 +49,7 @@
   ul.menu-options {
     margin-top: 10px;
     padding-left: 20px;
-    background-color: rgb(255, 245, 211);
+    background-color: #edeae5;
     border-radius: 10px;
   }
 

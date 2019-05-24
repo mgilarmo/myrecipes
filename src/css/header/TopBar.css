@@ -26,8 +26,7 @@
 .topbar-item-site {
   grid-area: site;
   align-self: center;
-  font-size: 4.0rem;
-  font-family: 'Permanent Marker', cursive;
+  font-size: 3.5rem;
 }
 
 .topbar-item-search {
@@ -66,5 +65,31 @@ div.menu-mobile {
   
   div.menu-mobile.open {
     display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .topbar-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "site menu user"
+      "search search search";
+    grid-gap: 10px;
+  }
+
+  .topbar-item-image {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .topbar-item-site {
+    font-size: 2.4rem;
+  }
+
+  .topbar-item-image {
+    display: none;
   }
 }

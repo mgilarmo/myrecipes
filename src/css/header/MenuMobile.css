@@ -2,3 +2,9 @@
   cursor: pointer;
   font-size: 3.0rem;
 }
+
+@media (max-width: 375px) {
+  .mobile-menu {
+    font-size: 2.0rem;
+  }
+}

@@ -6,14 +6,12 @@
       "recipeName": "Roasted Chicken",
       "typeOfRecipe": "dinner",
       "mainIngredient": "chicken",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 20,
       "cookTime": 90,
       "inactiveTime": 0,
       "ovenTemp": "425 degrees F",
-      "hardware": [
-        "roasting pan"
-      ],
+      "hardware": "roasting pan",
       "ingredients": [
         "1 (5 to 6 pound) roasting chicken",
         "Kosher salt",
@@ -43,15 +41,12 @@
       "recipeName": "Chicken Piccata", 
       "typeOfRecipe": "dinner",
       "mainIngredient": "chicken",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 15,
       "cookTime": 25,
       "inactiveTime": 0,
       "ovenTemp": "none",
-      "hardware": [
-        "large skillet",
-        "whisk"
-      ],
+      "hardware": "large skillet, whisk",
       "ingredients": [
         "2 skinless and boneless chicken breasts, butterflied and then cut in half",
         "Sea salt",
@@ -83,9 +78,7 @@
       "cookTime": 10,
       "inactiveTime": 0,
       "ovenTemp": "none",
-      "hardware": [
-        "10-inch or 12-inch skillet"
-      ],
+      "hardware": "10-inch or 12-inch skillet",
       "ingredients": [
         "1 teaspoon ground cinnamon",
         "1/4 teaspoon ground nutmeg",
@@ -114,9 +107,7 @@
       "cookTime": 40,
       "inactiveTime": 0,
       "ovenTemp": "400 degrees F",
-      "hardware": [
-        "sheet pan"
-      ],
+      "hardware": "sheet pan",
       "ingredients": [
         "1 1/2 pounds Brussels sprouts",
         "3 tablespoons good olive oil",
@@ -135,14 +126,12 @@
       "recipeName": "Chili",
       "typeOfRecipe": "dinner",
       "mainIngredient": "beef",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 30,
       "cookTime": 70,
       "inactiveTime": 0,
       "ovenTemp": "none",
-      "hardware": [
-        "large pot"
-      ],
+      "hardware": "large pot",
       "ingredients": [
         "2 pounds ground beef",
         "2 cloves garlic, chopped",
@@ -172,18 +161,12 @@
       "recipeName": "Shephard's Pie",
       "typeOfRecipe": "dinner",
       "mainIngredient": "beef",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 45,
       "cookTime": 45,
       "inactiveTime": 0,
       "ovenTemp": "400 degrees F",
-      "hardware": [
-        "medium saucepan with lid",
-        "colander",
-        "12-inch saute pan",
-        "11 by 7-inch glass baking dish",
-        "sheet pan"
-      ],
+      "hardware": "medium saucepan with lid, colander, 12-inch saute pan, 11 by 7-inch glass baking dish, sheet pan",
       "ingredients": [
         "1 1/2 pounds russet potatoes",
         "1/4 cup half-and-half",
@@ -223,14 +206,12 @@
       "recipeName": "Sheet-pan Chicken Fajitas",
       "typeOfRecipe": "dinner",
       "mainIngredient": "chicken",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 30,
       "cookTime": 15,
       "inactiveTime": 0,
       "ovenTemp": "broiler to high",
-      "hardware": [
-        "baking sheet"
-      ],
+      "hardware": "baking sheet",
       "ingredients": [
         "1 tablespoon chili powder",
         "Kosher salt",
@@ -263,9 +244,7 @@
       "cookTime": 60,
       "inactiveTime": 0,
       "ovenTemp": "400 degrees F",
-      "hardware": [
-        "sheet-pan"
-      ],
+      "hardware": "sheet-pan",
       "ingredients": [
         "3 pounds small red or white potatoes",
         "1/4 cup good olive oil",
@@ -287,14 +266,12 @@
       "recipeName": "Pot Roast",
       "typeOfRecipe": "dinner",
       "mainIngredient": "beef",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 15,
       "cookTime": 255,
       "inactiveTime": 0,
       "ovenTemp": "275 degrees F",
-      "hardware": [
-        "large pot or Dutch oven"
-      ],
+      "hardware": "large pot or Dutch oven",
       "ingredients": [
         "Salt",
         "Freshly ground black pepper",
@@ -324,14 +301,12 @@
       "recipeName": "Oven-baked Salmon",
       "typeOfRecipe": "dinner",
       "mainIngredient": "fish",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 5,
       "cookTime": 15,
       "inactiveTime": 0,
       "ovenTemp": "450 degrees F",
-      "hardware": [
-        "non-stick baking sheet or non-stick pan with an oven-proof handle"
-      ],
+      "hardware": "non-stick baking sheet or non-stick pan with an oven-proof handle",
       "ingredients": [
         "12oz. salmon fillet, cut into 4 pieces",
         "Coarse-grained salt",
@@ -363,9 +338,7 @@
       "cookTime": 15,
       "inactiveTime": 0,
       "ovenTemp": "none",
-      "hardware": [
-        "saucepan with lid"
-      ],
+      "hardware": "saucepan with lid",
       "ingredients": [
         "6 eggs",
         "1/4 cup mayonnaise",
@@ -390,14 +363,12 @@
       "recipeName": "Scallops Provencal",
       "typeOfRecipe": "dinner",
       "mainIngredient": "fish",
-      "typeOfDiet": "",
+      "typeOfDiet": "none",
       "prepTime": 5,
       "cookTime": 10,
       "inactiveTime": 0,
       "ovenTemp": "none",
-      "hardware": [
-        "very large saute pan"
-      ],
+      "hardware": "very large saute pan",
       "ingredients": [
         "1 pound fresh bay or sea scallops",
         "Kosher salt",
@@ -428,10 +399,7 @@
       "cookTime": 30,
       "inactiveTime": 0,
       "ovenTemp": "425 degrees F",
-      "hardware": [
-        "large skillet",
-        "shallow baking dish"
-      ],
+      "hardware": "large skillet, shallow baking dish",
       "ingredients": [
         "1 1/2 tablespoons unsalted butter, cut into pieces, plus more for brushing",
         "1/2 clove garlic",
@@ -451,6 +419,404 @@
         "Heat the skillet over medium-high heat. Add half of the potatoes, spreading them out. Sprinkle with 3/4 teaspoon salt, half of the cut-up butter, half of the shredded cheese blend, and pepper to taste. Arrange the remaining potatoes on top. Sprinkle with 3/4 teaspoon salt, and pepper to taste. Pour the cream over the potatoes, then add the nutmeg and bay leaves; simmer 3 minutes. Dot the potatoes with the remaining cut-up butter.",
         "Generously brush a shallow baking dish with butter; slide the potatoes into the dish; arrange with a fork, if desired. (If your skillet is ovenproof, you can skip this step and bake the potatoes in the skillet.)",
         "Sprinkle the potatoes with the parmesan and the remaining shredded cheese blend. Bake until golden, about 25 minutes. Let rest 5 minutes before serving. Discard the bay leaves."
+      ],
+      "notes": []
+    },
+    {
+      "id": 13,
+      "link": "https://www.foodnetwork.com/recipes/ina-garten/linguine-with-shrimp-scampi-recipe3-1916619",
+      "recipeName": "Linguine with Shrimp Scampi",
+      "typeOfRecipe": "dinner",
+      "mainIngredient": "pasta",
+      "typeOfDiet": "none",
+      "prepTime": 10,
+      "cookTime": 15,
+      "inactiveTime": 0,
+      "ovenTemp": "none",
+      "hardware": "large pot, large heavy-bottomed pan",
+      "ingredients": [
+        "Vegetable oil",
+        "1 tablespoon kosher salt plus 1 1/2 teaspoons",
+        "3/4 pound linguine",
+        "3 tablespoons unsalted butter",
+        "2 1/2 tablespoons good olive oil",
+        "1 1/2 tablespoons minced garlic (4 cloves)",
+        "1 pound large shrimp (about 16 shrimp), peeled and deveined",
+        "1/4 teaspoon freshly ground black pepper",
+        "1/3 cup chopped fresh parsley leaves",
+        "1/2 lemon, zest grated",
+        "1/4 cup freshly squeezed lemon juice (2 lemons)",
+        "1/4 lemon, thinly sliced in half-rounds",
+        "1/8 teaspoon hot red pepper flakes"
+      ],
+      "directions": [
+        "Drizzle some oil in a large pot of boiling salted water, add 1 tablespoon of salt and the linguine, and cook for 7 to 10 minutes, or according to the directions on the package.",
+        "Meanwhile, in another large (12-inch), heavy-bottomed pan, melt the butter and olive oil over medium-low heat. Add the garlic. Saute for 1 minute. Be careful, the garlic burns easily! Add the shrimp, 1 1/2 teaspoons of salt, and the pepper and saute until the shrimp have just turned pink, about 5 minutes, stirring often. Remove from the heat, add the parsley, lemon zest, lemon juice, lemon slices, and red pepper flakes. Toss to combine.",
+        "When the pasta is done, drain the cooked linguine and then put it back in the pot. Immediately add the shrimp and sauce, toss well, and serve."
+      ],
+      "notes": []
+    },
+    {
+      "id": 14,
+      "link": "https://www.foodnetwork.com/recipes/food-network-kitchen/lemon-garlic-shrimp-and-grits-recipe-1973610",
+      "recipeName": "Lemon-Garlic Shrimp and Grits",
+      "typeOfRecipe": "main dish",
+      "mainIngredient": "shrimp",
+      "typeOfDiet": "none",
+      "prepTime": 15,
+      "cookTime": 15,
+      "inactiveTime": 0,
+      "ovenTemp": "none",
+      "hardware": "medium saucepan, large skillet",
+      "ingredients": [
+        "3/4 cup instant grits",
+        "Kosher salt",
+        "Freshly ground black pepper",
+        "1/4 cup grated parmesan cheese",
+        "3 tablespoons unsalted butter",
+        "1 1/4 pounds medium shrimp, peeled and deveined, tails intact",
+        "2 large cloves garlic, minced",
+        "Pinch of cayenne pepper (optional)",
+        "Juice of 1/2 lemon, plus wedges for serving",
+        "2 tablespoons roughly chopped fresh parsley"
+      ],
+      "directions": [
+        "Bring 3 cups of water to a boil in a medium saucepan over high heat, covered. Uncover and slowly whisk in the grits, 1 teaspoon salt and 1/2 teaspoon pepper. Reduce the heat to medium low and cook, stirring occasionally, until thickened, about 5 minutes. Stir in the parmesan and 1 tablespoon butter. Remove from the heat and season with salt and pepper. Cover to keep warm.",
+        "Meanwhile, season the shrimp with salt and pepper. Melt the remaining 2 tablespoons butter in a large skillet over medium-high heat. Add the shrimp, garlic and cayenne, if using, and cook, tossing, until the shrimp are pink, 3 to 4 minutes. Remove from the heat and add 2 tablespoons water, the lemon juice and parsley; stir to coat the shrimp with the sauce and season with salt and pepper.",
+        "Divide the grits among shallow bowls and top with the shrimp and sauce. Serve with lemon wedges."
+      ],
+      "notes": []
+    },
+    {
+      "id": 15,
+      "link": "https://www.foodnetwork.com/recipes/giada-de-laurentiis/roman-style-chicken-recipe-1945439",
+      "recipeName": "Roman-Style Chicken",
+      "typeOfRecipe": "dinner",
+      "mainIngredient": "chicken",
+      "typeOfDiet": "none",
+      "prepTime": 20,
+      "cookTime": 40,
+      "inactiveTime": 0,
+      "ovenTemp": "none",
+      "hardware": "large skillet",
+      "ingredients": [
+        "4 skinless chicken breast halves, with ribs",
+        "2 skinless chicken thighs, with bones",
+        "1/2 teaspoon salt, plus 1 teaspoon",
+        "1/2 teaspoon freshly ground black pepper, plus 1 teaspoon",
+        "1/4 cup olive oil",
+        "1 red bell pepper, sliced",
+        "1 yellow bell pepper, sliced",
+        "3 ounces prosciutto, chopped",
+        "2 cloves garlic, chopped",
+        "1 (15-ounce) can diced tomatoes",
+        "1/2 cup white wine",
+        "1 tablespoon fresh thyme leaves",
+        "1 teaspoon fresh oregano leaves",
+        "1/2 cup chicken stock",
+        "2 tablespoons capers",
+        "1/4 cup chopped fresh flat-leaf parsley leaves"
+      ],
+      "directions": [
+        "Season the chicken with 1/2 teaspoon salt and 1/2 teaspoon pepper. In a heavy, large skillet, heat the olive oil over medium heat. When the oil is hot, cook the chicken until browned on both sides. Remove from the pan and set aside.",
+        "Keeping the same pan over medium heat, add the peppers and prosciutto and cook until the peppers have browned and the prosciutto is crisp, about 5 minutes. Add the garlic and cook for 1 minute. Add the tomatoes, wine, and herbs. Using a wooden spoon, scrape the browned bits off the bottom of the pan. Return the chicken to the pan, add the stock, and bring the mixture to a boil. Reduce the heat and simmer, covered, until the chicken is cooked through, about 20 to 30 minutes.",
+        "If serving immediately, add the capers and the parsley. Stir to combine and serve. If making ahead of time, transfer the chicken and sauce to a storage container, cool, and refrigerate. The next day, reheat the chicken to a simmer over medium heat. Stir in the capers and the parsley and serve."
+      ],
+      "notes": []
+    },
+    {
+      "id": 16,
+      "link": "https://www.foodnetwork.com/recipes/ellie-krieger/zucchini-parmesan-crisps-recipe-1939866",
+      "recipeName": "Zucchini Parmesan Crisps",
+      "typeOfRecipe": "side dish",
+      "mainIngredient": "zucchini",
+      "typeOfDiet": "none",
+      "prepTime": 20,
+      "cookTime": 30,
+      "inactiveTime": 0,
+      "ovenTemp": "450 degrees F",
+      "hardware": "baking sheet",
+      "ingredients": [
+        "Cooking spray",
+        "2 medium zucchini (about 1 pound total)",
+        "1 tablespoon olive oil",
+        "1/4 cup freshly grated Parmesan (3/4-ounce)",
+        "1/4 cup plain dry bread crumbs",
+        "1/8 teaspoon salt",
+        "Freshly ground black pepper"
+      ],
+      "directions": [
+        "Preheat the oven to 450 degrees F. Coat a baking sheet with cooking spray.",
+        "Slice the zucchini into 1/4-inch thick rounds. In a medium bowl, toss the zucchini with the oil. In a small bowl, combine the Parmesan, bread crumbs, salt, and a few turns of pepper. Dip each round into the Parmesan mixture, coating it evenly on both sides, pressing the coating on to stick, and place in a single layer on the prepared baking sheet.",
+        "Bake the zucchini rounds until browned and crisp, 25 to 30 minutes. Remove with spatula. Serve immediately."
+      ],
+      "notes": []
+    },
+    {
+      "id": 17,
+      "link": "https://www.foodnetwork.com/recipes/tyler-florence/chicken-enchiladas-recipe-1907241",
+      "recipeName": "Chicken Enchiladas",
+      "typeOfRecipe": "main dish",
+      "mainIngredient": "chicken",
+      "typeOfDiet": "none",
+      "prepTime": 60,
+      "cookTime": 15,
+      "inactiveTime": 0,
+      "ovenTemp": "350 degree F",
+      "hardware": "large saute pan, two 13-by-9in pans ",
+      "ingredients": [
+        "3 tablespoons vegetable oil",
+        "1 1/2 pounds skinless boneless chicken breast",
+        "Salt",
+        "Pepper",
+        "2 teaspoons cumin powder",
+        "2 teaspoons garlic powder",
+        "1 teaspoon Mexican Spice Blend",
+        "1 red onion, chopped",
+        "2 cloves garlic, minced",
+        "1 cup frozen corn, thawed",
+        "5 canned whole green chiles, seeded and coarsely chopped",
+        "4 canned chipotle chiles, seeded and minced",
+        "1 (28-ounce) can stewed tomatoes",
+        "1/2 teaspoon all-purpose flour",
+        "16 corn tortillas",
+        "1 1/2 cups enchilada sauce, canned",
+        "1 cup shredded Cheddar and Jack cheeses",
+        "Garnish: chopped cilantro leaves, chopped scallions, sour cream, chopped tomatoes"
+      ],
+      "directions": [
+        "Coat large saute pan with oil. Season chicken with salt and pepper. Brown chicken over medium heat, allow 7 minutes each side or until no longer pink. Sprinkle chicken with cumin, garlic powder and Mexican spices before turning. Remove chicken to a platter, allow to cool.",
+        "Saute onion and garlic in chicken drippings until tender. Add corn and chiles. Stir well to combine. Add canned tomatoes, saute 1 minute.",
+        "Pull chicken breasts apart by hand into shredded strips. Add shredded chicken to saute pan, combine with vegetables. Dust the mixture with flour to help set.",
+        "Microwave tortillas on high for 30 seconds. This softens them and makes them more pliable. Coat the bottom of 2 (13 by 9-inch) pans with a ladle of enchilada sauce. Using a large shallow bowl, dip each tortilla in enchilada sauce to lightly coat. Spoon 1/4 cup chicken mixture in each tortilla. Fold over filling, place 8 enchiladas in each pan with seam side down. Top with remaining enchilada sauce and cheese.",
+        "Bake for 15 minutes in a preheated 350 degree F oven until cheese melts. Garnish with cilantro, scallion, sour cream and chopped tomatoes before serving. Serve with Spanish rice and beans."
+      ],
+      "notes": []
+    },
+    {
+      "id": 18,
+      "link": "https://www.foodnetwork.com/recipes/ree-drummond/twice-baked-potatoes-recipe-1925596",
+      "recipeName": "Twice-Baked Potatoes",
+      "typeOfRecipe": "side dish",
+      "mainIngredient": "potato",
+      "typeOfDiet": "none",
+      "prepTime": 30,
+      "cookTime": 80,
+      "inactiveTime": 0,
+      "ovenTemp": "400 degrees F",
+      "hardware": "baking sheet",
+      "ingredients": [
+        "8 baking potatoes, washed",
+        "3 tablespoons canola oil",
+        "2 sticks salted butter",
+        "1 cup bacon, chopped",
+        "1 cup sour cream",
+        "1 cup Cheddar or Jack cheese (or a mix of both), plus more for topping",
+        "1 cup whole milk",
+        "2 teaspoons seasoned salt",
+        "3 green onions, sliced",
+        "Freshly ground black pepper"
+      ],
+      "directions": [
+        "Preheat the oven to 400 degrees F.",
+        "Place the potatoes on a baking sheet. Rub them with the canola oil and bake for 1 hour, making sure they're sufficiently cooked through.",
+        "Slice the butter into pats. Place in a large mixing bowl and add the bacon bits and sour cream. Remove the potatoes from the oven. Lower the heat to 350 degrees F.",
+        "With a sharp knife, cut each potato in half lengthwise. Scrape out the insides into the mixing bowl, being careful not to tear the shell. Leave a small rim of potato intact for support. Lay the hollowed out potato shells on a baking sheet.",
+        "Smash the potatoes into the butter, bacon and sour cream. Add the cheese, milk, seasoned salt, green onions and black pepper to taste and mix together well.",
+        "Fill the potato shells with the filling. I like to fill the shells so they look abundant and heaping. Top each potato with a little more grated cheese and pop 'em in the oven until the potato is warmed through, 15 to 20 minutes."
+      ],
+      "notes": [
+        "If you plan to freeze the twice-baked potatoes, do NOT add the green onions."
+      ]
+    },
+    {
+      "id": 19,
+      "link": "https://www.foodnetwork.com/recipes/food-network-kitchen/skillet-rosemary-chicken-recipe-2104751",
+      "recipeName": "Skillet Rosemary Chicken",
+      "typeOfRecipe": "dinner",
+      "mainIngredient": "chicken",
+      "typeOfDiet": "none",
+      "prepTime": 15,
+      "cookTime": 25,
+      "inactiveTime": 0,
+      "ovenTemp": "450 degrees F",
+      "hardware": "saucepan, large skillet",
+      "ingredients": [
+        "3/4 pound small red-skinned potatoes, halved, or quartered if large",
+        "Kosher salt",
+        "2 sprigs fresh rosemary, plus 1 tablespoon leaves",
+        "1 clove garlic, smashed",
+        "Pinch of red pepper flakes",
+        "Juice of 2 lemons (squeezed halves reserved)",
+        "2 tablespoons extra-virgin olive oil",
+        "4 skin-on, bone-in chicken breasts (6 to 8 ounces each)",
+        "10 ounces cremini mushrooms, halved"
+      ],
+      "directions": [
+        "Preheat the oven to 450. Cover the potatoes with cold water in a saucepan and salt the water. Bring to a boil over medium-high heat and cook until tender, about 8 minutes; drain and set aside.",
+        "Pile the rosemary leaves, garlic, 2 teaspoons salt and the red pepper flakes on a cutting board, then mince and mash into a paste using a large knife. Transfer the paste to a bowl. Stir in the juice of 1 lemon and the olive oil. Add the chicken and turn to coat.",
+        "Heat a large cast-iron skillet over medium-high heat. Add the chicken, skin-side down, cover and cook until the skin browns, about 5 minutes. Turn the chicken; add the mushrooms and potatoes to the skillet and drizzle with the juice of the remaining lemon.",
+        "Add the rosemary sprigs and the squeezed lemon halves to the skillet; transfer to the oven and roast, uncovered, until the chicken is cooked through and the skin is crisp, 20 to 25 minutes."
+      ],
+      "notes": []
+    },
+    {
+      "id": 20,
+      "link": "https://www.foodnetwork.com/recipes/ina-garten/lemon-yogurt-cake-recipe-1947092",
+      "recipeName": "Lemon Yogurt Cake",
+      "typeOfRecipe": "dessert",
+      "mainIngredient": "lemon",
+      "typeOfDiet": "none",
+      "prepTime": 10,
+      "cookTime": 50,
+      "inactiveTime": 0,
+      "ovenTemp": "350 degrees F",
+      "hardware": "8 1/2 by 4 1/4 by 2 1/2-inch loaf pan",
+      "ingredients": [
+        "1 1/2 cups all-purpose flour",
+        "2 teaspoons baking powder",
+        "1/2 teaspoon kosher salt",
+        "1 cup plain whole-milk yogurt",
+        "1 1/3 cups sugar, divided",
+        "3 extra-large eggs",
+        "2 teaspoons grated lemon zest (2 lemons)",
+        "1/2 teaspoon pure vanilla extract",
+        "1/2 cup vegetable oil",
+        "1/3 cup freshly squeezed lemon juice, plus 2 Tbsp for glaze",
+        "1 cup confectioners' sugar"
+      ],
+      "directions": [
+        "Preheat the oven to 350 degrees F. Grease an 8 1/2 by 4 1/4 by 2 1/2-inch loaf pan. Line the bottom with parchment paper. Grease and flour the pan.",
+        "Sift together the flour, baking powder, and salt into 1 bowl. In another bowl, whisk together the yogurt, 1 cup sugar, the eggs, lemon zest, and vanilla. Slowly whisk the dry ingredients into the wet ingredients. With a rubber spatula, fold the vegetable oil into the batter, making sure it's all incorporated. Pour the batter into the prepared pan and bake for about 50 minutes, or until a cake tester placed in the center of the loaf comes out clean.",
+        "Meanwhile, cook the 1/3 cup lemon juice and remaining 1/3 cup sugar in a small pan until the sugar dissolves and the mixture is clear. Set aside.",
+        "When the cake is done, allow it to cool in the pan for 10 minutes. Carefully place on a baking rack over a sheet pan. While the cake is still warm, pour the lemon-sugar mixture over the cake and allow it to soak in. Cool.",
+        "For the glaze, combine the confectioners' sugar and lemon juice and pour over the cake."
+      ],
+      "notes": []
+    },
+    {
+      "id": 21,
+      "link": "https://www.foodnetwork.com/recipes/giada-de-laurentiis/baked-penne-with-roasted-vegetables-recipe-1916906",
+      "recipeName": "Baked Penne with Roasted Vegetables",
+      "typeOfRecipe": "main dish",
+      "mainIngredient": "penne",
+      "typeOfDiet": "vegetarian",
+      "prepTime": 25,
+      "cookTime": 40,
+      "inactiveTime": 0,
+      "ovenTemp": "450 degrees F",
+      "hardware": "baking sheet, large pot, colander, 9 by 13-inch pan",
+      "ingredients": [
+        "2 red peppers, cored and cut into 1-inch wide strips",
+        "2 zucchini, quartered lengthwise and cut into 1-inch cubes",
+        "2 summer squash, quartered lengthwise and cut into 1-inch cubes",
+        "4 cremini mushrooms, halved",
+        "1 yellow onion, peeled and sliced into 1-inch strips",
+        "1/4 cup extra-virgin olive oil",
+        "1 teaspoon salt, divided",
+        "1 teaspoon freshly ground black pepper, divided",
+        "1 tablespoon dried Italian herb mix or herbs de Provence",
+        "1 pound penne pasta",
+        "3 cups marinara sauce (store bought or homemade)",
+        "1 cup grated fontina cheese",
+        "1/2 cup grated smoked mozzarella",
+        "1 1/2 cups frozen peas, thawed",
+        "1/4 cup grated Parmesan, plus 1/3 cup for topping",
+        "2 tablespoons butter, cut into small pieces"
+      ],
+      "directions": [
+        "On a baking sheet, toss the peppers, zucchini, squash, mushrooms, and onions with olive oil, 1/2 teaspoon salt, 1/2 teaspoon pepper, and dried herbs. Roast until tender, about 15 minutes.",
+        "Meanwhile, bring a large pot of salted water to a boil over high heat. Add the pasta and cook for about 6 minutes. Since you will be cooking the pasta a second time in the oven, you want to make sure the inside is still hard. Drain in a colander.",
+        "In a large bowl, toss the drained pasta with the roasted vegetables, marinara sauce, cheeses, peas, 1/2 teaspoon salt, and 1/2 teaspoon pepper. Using a wooden spoon, gently mix, until all the pasta is coated with the sauce and the ingredients are combined.",
+        "Pour the pasta into a greased 9 by 13-inch pan. Top with the remaining 1/3 cup Parmesan and butter pieces. Bake until top is golden and cheese melts, about 25 minutes."
+      ],
+      "notes": []
+    },
+    {
+      "id": 22,
+      "link": "https://www.foodnetwork.com/recipes/giada-de-laurentiis/parmesan-crusted-pork-chops-recipe-1944476",
+      "recipeName": "Parmesan-Crusted Pork Chops",
+      "typeOfRecipe": "dinner",
+      "mainIngredient": "pork",
+      "typeOfDiet": "none",
+      "prepTime": 15,
+      "cookTime": 12,
+      "inactiveTime": 0,
+      "ovenTemp": "",
+      "hardware": "large skillet",
+      "ingredients": [
+        "2 large eggs",
+        "1 cup dried Italian-style bread crumbs",
+        "3/4 cups freshly grated Parmesan",
+        "4 (1/2 to 3/4-inch thick) center-cut pork loin chops (each about 10 to 12 ounces)",
+        "Salt",
+        "Freshly ground black pepper",
+        "6 tablespoons olive oil",
+        "Lemon wedges, for serving"
+      ],
+      "directions": [
+        "Whisk the eggs in a pie plate to blend. Place the bread crumbs in another pie plate. Place the cheese in a third pie plate. Sprinkle the pork chops generously with salt and pepper. Coat the chops completely with the cheese, patting to adhere. Dip the chops into the eggs, then coat completely with the bread crumbs, patting to adhere.",
+        "Heat 3 tablespoons of oil in a very large skillet over medium heat. Add pork chops, in batches if necessary, and cook until golden brown and the center reaches 150 degrees, about 6 minutes per side. Transfer the chops to plates and serve with lemon wedges."
+      ],
+      "notes": []
+    },
+    {
+      "id": 23,
+      "link": "https://www.foodnetwork.com/recipes/ree-drummond/restaurant-style-salsa-recipe-2109390",
+      "recipeName": "Restaurant-Style Salsa",
+      "typeOfRecipe": "dip or salsa",
+      "mainIngredient": "tomato",
+      "typeOfDiet": "none",
+      "prepTime": 15,
+      "cookTime": 0,
+      "inactiveTime": 60,
+      "ovenTemp": "none",
+      "hardware": "12-cup food processor",
+      "ingredients": [
+        "Two 10-ounce cans diced tomatoes and green chiles, such as Rotel",
+        "One 28-ounce can whole tomatoes with juice",
+        "1/2 cup fresh cilantro leaves (or more to taste)",
+        "1/4 cup chopped onion",
+        "1 clove garlic, minced",
+        "1 whole jalapeno, quartered and sliced thin, with seeds and membrane",
+        "1/4 teaspoon ground cumin",
+        "1/4 teaspoon salt",
+        "1/4 teaspoon sugar",
+        "1/2 whole lime, juiced"
+      ],
+      "directions": [
+        "Combine the diced tomatoes, whole tomatoes, cilantro, onions, garlic, jalapeno, cumin, salt, sugar and lime juice in a blender or food processor. (This is a very large batch. I recommend using a 12-cup food processor, or you can process the ingredients in batches and then mix everything together in a large mixing bowl.)",
+        "Pulse until you get the salsa to the consistency you'd like. I do about 10 to 15 pulses. Test seasonings with a tortilla chip and adjust as needed.",
+        "Refrigerate the salsa for at least an hour before serving."
+      ],
+      "notes": []
+    },
+    {
+      "id": 24,
+      "link": "https://www.foodnetwork.com/recipes/ree-drummond/blackberry-cobbler-recipe-1925731",
+      "recipeName": "Blackberry Cobbler",
+      "typeOfRecipe": "dessert",
+      "mainIngredient": "blackberry",
+      "typeOfDiet": "none",
+      "prepTime": 15,
+      "cookTime": 60,
+      "inactiveTime": 0,
+      "ovenTemp": "350 degrees F",
+      "hardware": "3-quart baking dish",
+      "ingredients": [
+        "1/2 stick butter, melted, plus more for greasing pan",
+        "1 1/4 cups plus 2 tablespoons sugar",
+        "1 cup self-rising flour",
+        "1 cup whole milk",
+        "2 cups fresh (or frozen) blackberries",
+        "Whipped cream and/or ice cream, for serving"
+      ],
+      "directions": [
+        "Preheat the oven to 350 degrees F. Grease a 3-quart baking dish with butter.",
+        "In a medium bowl, whisk 1 cup sugar with the flour and milk. Whisk in the melted butter.",
+        "Rinse the blackberries and pat them dry. Pour the batter into the baking dish. Sprinkle the blackberries evenly over the top of the batter. Sprinkle 1/4 cup sugar over the blackberries. Bake until golden brown and bubbly, about 1 hour. When 10 minutes of the cooking time remains, sprinkle the remaining 2 tablespoons sugar over the top. Top with whipped cream or ice cream . . . or both!",
+        "",
+        ""
       ],
       "notes": []
     }

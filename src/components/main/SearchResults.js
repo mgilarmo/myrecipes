@@ -36,7 +36,7 @@ const SearchResults = (props) => {
     [];    
   }
   return (
-    <div>
+    <div className="recipe-card-results">
       {filteredRecipes.map((recipe) => 
         <div 
           className="recipe-card"

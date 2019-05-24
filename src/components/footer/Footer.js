@@ -9,10 +9,18 @@ const Footer = () => {
           &copy; 2019, My Recipes
         </div>
         <div className="footer-item-social">
-          <i className="fab fa-facebook-square" />
-          <i className="fab fa-twitter-square" />
-          <i className="fab fa-instagram" />
-          <i className="fab fa-pinterest-square" />
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook-square" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter-square" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram" />
+          </a>
+          <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-pinterest-square" />
+          </a>
         </div>
       </div>
     </div>

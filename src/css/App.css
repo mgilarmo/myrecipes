@@ -1,8 +1,8 @@
 .header {
-  background-color: #5cdb95;
+  background-color: #5a7247;
   position: fixed;
   width: 100%;
-  box-shadow: 0 4px 5px -5px #409b69;
+  box-shadow: 0 4px 5px -5px #323f27;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -21,16 +21,16 @@
 
 
 .footer {
-  background-color: #5cdb95;
+  background-color: #5a7247;
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 -4px 5px -5px #409b69;
+  box-shadow: 0 -4px 5px -5px #323f27;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 a {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
 }

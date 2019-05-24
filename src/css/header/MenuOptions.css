@@ -6,13 +6,13 @@
 
   ul.menu-options label {
     cursor: pointer;
-    outline-color: #388d5e;
+    outline-color: #323f27;
   }
 
   ul.menu-options li {
     display: inline;
     padding-left: 20px;
-    outline-color: #388d5e;
+    outline-color: #323f27;
   }
 
   ul.menu-options li label i, ul.menu-options li Link i {
